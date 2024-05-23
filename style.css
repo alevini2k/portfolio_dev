@@ -1,0 +1,293 @@
+/*estilo geral*/
+body{
+    background-color: #020202;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+}
+
+.interface{
+    max-width: 1280px;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(0, 0, 255);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+/*estilo cabeçalho*/
+header
+{
+    padding: 80px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a{
+    color: #9e9ec7e8;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover, form .btn-enviar input:hover{
+    transform: scale(1.05);
+}
+
+/*estilo topo-do-site*/
+section.topo-do-site{
+    padding: 5% 5%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.topo-do-site h1{
+color: #fff;
+font-size: 58px;
+}
+
+.topo-do-site h3{
+    color: #fff;
+    font-size: 32px;
+}
+
+.topo-do-site .txt-topo-do-site h1 span{
+    color: #0000ffe8;
+    font-size: 70px;
+}
+
+.topo-do-site .txt-topo-do-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+
+/*estilo do perfil*/
+section.perfil{
+    padding: 125px 4%;
+    box-shadow: 0 0 40px 10px rgba(6, 10, 231, 0.123);
+}
+section.perfil .flex{
+    gap: 60px;
+    padding: 80px 4%;
+}
+
+
+.perfil .Perfil-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 4%;
+    transition: 0.2s;
+}
+.perfil .Perfil-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(247, 244, 244, 0.411);
+}
+
+.perfil .Perfil-box h3{
+font-size: 28px;
+color: #0000ffe8;
+margin: 25px 0;
+}
+
+
+/*estilo especialidades*/
+section.especialidades{
+    padding: 120px 4%;
+}
+section.especialidades .flex{
+    align-items: center;
+    gap: 10px;
+}
+
+.especialidades .txt-especialidades p{
+    font-size: 20px;
+    margin: 30px 0;
+    text-align: justify;
+    padding: 0 10%;
+}
+
+.especialidades .txt-especialidades h2{
+    font-size: 40px;
+    color: #fff;
+    padding: 0 10%;
+}
+
+.especialidades .txt-especialidades h2 span{
+    font-size: 40px;
+    color: #0000ffe8;
+    margin-bottom: 30px;
+}
+.especialidades .txt-especialidades span{
+    display: block;
+}
+
+.especialidades .txt-especialidades{
+    color: #fff;
+}
+
+.especialidades .img-especialidades img{
+padding: 50px 10%;
+position: relative;
+animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/*estilo projeto*/
+section.projetos{
+    padding: 100px 4%;
+    box-shadow: 0 0 40px 10px rgba(6, 10, 231, 0.123);   
+}
+section.projetos .flex{
+    gap: 80px;
+    justify-content: space-around;
+margin-top: 40px;
+}
+.projetos .interface h2 span{
+    color: #0000ffe8;
+}
+
+.img-proj{
+height: 500px;
+width: 400px;
+background-size: cover;
+background-position: 49% 0%;
+cursor:pointer;
+border-radius: 40px;
+position: relative;
+}
+
+.overlay{
+    position: relative;
+height: 100%;
+width: 100%;
+background-color: #000000ef;
+border-radius: 37px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 24px;
+font-weight: 500;
+color: #fff;
+opacity: 0;
+transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/*estilo do contato*/
+section.contato{
+ padding: 60px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.contato .interface h2 span{
+    color: #0000ffe8;
+}
+
+.contato .interface h2{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #414141ea;
+    border: 0;
+    outline: 0;
+    padding: 20px 10px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+form textarea{
+    resize: none;
+}
+
+form .btn-enviar{
+    margin-top: 30px;
+text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #0000ffe8;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+/*estilo rodape*/
+footer{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px rgba(6, 10, 231, 0.123);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
